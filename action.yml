@@ -1,0 +1,12 @@
+name: actions-curl
+author: Alesil Tecnologia
+
+description: Run curl from docker
+
+branding:
+  icon: "package"
+  color: "blue"
+
+inputs:
+  curl:
+    
