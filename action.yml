@@ -4,9 +4,17 @@ author: Alesil Tecnologia
 description: Run curl from docker
 
 branding:
-  icon: "package"
-  color: "blue"
+  icon: 'link'
+  color: 'blue'
 
 inputs:
   curl:
-    
+    description: 'Curl parameters'
+    required: true
+    default: '127.0.0.1' 
+
+runs:
+  using: 'docker'
+  image: Dockerfile
+  args:
+    - ${{ inputs.curl }}
